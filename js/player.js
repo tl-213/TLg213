@@ -9,7 +9,6 @@ let EventKeydown_of_player = {
 let player1 = {
   x: canvas.width / 2,
   y: canvas.height / 2,
-  color: "rgba(255, 0, 0, 1)",
   speed: 5,
 
   hp: {
@@ -38,7 +37,6 @@ function drawPlayer1() {
   }
 
   ctx.beginPath();
-  ctx.fillStyle = player1.color;
   ctx.drawImage(image_player1_right.png, player1.x, player1.y);
   //ctx.arc(player1.x, player1.y, player1.r, 0, Math.PI * 2);
   ctx.fill();
