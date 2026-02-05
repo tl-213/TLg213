@@ -3,6 +3,8 @@ let EventKeydown_of_player = {
     normal: "o"
   },
 
+  player_direction: "left"
+
   skill: {}
 };
 
@@ -31,17 +33,24 @@ function drawPlayer1() {
   } 
   else if (EventKeydown_of_player.move.normal === "a") {
     player1.x -= player1.speed;
+    EventKeyDown_of_player.player_direction = "left";
   } 
   else if (EventKeydown_of_player.move.normal === "d") {
     player1.x += player1.speed;
+    EventKeyDown_of_player.player_direction = "right";
   }
 
   ctx.beginPath();
-  ctx.drawImage(image_player1_right, player1.x, player1.y);
-  //ctx.arc(player1.x, player1.y, player1.r, 0, Math.PI * 2);
+  
+  if (EventKeydown_of_player.player_direction === "left") {
+    ctx.drawImage(image_player1_left, player1.x, player1.y);
+  }
+  else if (EventKeyDown_of_player.player_direction === "right") {
+    ctx.drawImage(image_player1_right, player1.x, player1.y);
+  }
+  
   ctx.fill();
 
-  ctx.beginPath();
   ctx.fillStyle = "red";
   ctx.fillRect(
     10,
@@ -50,7 +59,6 @@ function drawPlayer1() {
     player1.rect_hp.rect_h
   );
 
-  ctx.beginPath();
   ctx.fillStyle = "green";
   ctx.fillRect(
     10,
