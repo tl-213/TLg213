@@ -77,5 +77,3 @@ window.addEventListener("keyup", (e) => {
   }
 });
 
-gameLoop();
-
