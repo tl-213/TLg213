@@ -37,7 +37,7 @@ function drawPlayer1() {
   }
 
   ctx.beginPath();
-  ctx.drawImage(image_player1_right.png, player1.x, player1.y);
+  ctx.drawImage(image_player1_right, player1.x, player1.y);
   //ctx.arc(player1.x, player1.y, player1.r, 0, Math.PI * 2);
   ctx.fill();
 
