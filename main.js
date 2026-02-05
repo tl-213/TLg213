@@ -6,3 +6,5 @@ function gameLoop() {
   drawPlayer1();
   requestAnimationFrame(gameLoop);
 }
+
+gameLoop()
