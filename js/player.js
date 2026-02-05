@@ -3,9 +3,7 @@ let EventKeydown_of_player = {
     normal: "o"
   },
 
-  player_direction: "left",
-
-  skill: {}
+  player_direction: "left"  
 };
 
 let player1 = {
