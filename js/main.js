@@ -1,4 +1,4 @@
-const canvas = document.getElementById("test_canvas");
+const canvas = document.getElementById("TL_canvas");
 const ctx = canvas.getContext("2d");
 
 function gameLoop() {
