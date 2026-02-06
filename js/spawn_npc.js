@@ -4,7 +4,6 @@ let npc = {
       normal: {
         normal_zombie_001: {
           image,
-          color_effect: "white",
           level: 1,
 
           damage: 5,
@@ -24,9 +23,9 @@ let npc = {
             direction: "right",
             speed: 3
           }
-        },
+        }
 
-        zombie_speed_001
+        
       }
     }
   }
