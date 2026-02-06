@@ -3,7 +3,8 @@ let npc = {
     zombies: {
       normal: {
         normal_zombie_001: {
-          image,
+          image_right: image_normal_zombie_001_right,
+          image_left: image_normal_zombie_001_left,
           level: 1,
 
           damage: 5,
