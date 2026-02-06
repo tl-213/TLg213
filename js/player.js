@@ -7,8 +7,6 @@ let EventKeydown_of_player = {
 };
 
 let player1 = {
-  x: canvas.width / 2,
-  y: canvas.height / 2,
   speed: 5,
   attack_range: 45,
 
@@ -25,27 +23,27 @@ let player1 = {
 
 function drawPlayer1() {
   if (EventKeydown_of_player.move.normal === "w") {
-    player1.y -= player1.speed;
+    player1_pos.y -= player1.speed;
   } 
   else if (EventKeydown_of_player.move.normal === "s") {
-    player1.y += player1.speed;
+    player1_pos.y += player1.speed;
   } 
   else if (EventKeydown_of_player.move.normal === "a") {
-    player1.x -= player1.speed;
+    player1_pos.x -= player1.speed;
     EventKeydown_of_player.player_direction = "left";
   } 
   else if (EventKeydown_of_player.move.normal === "d") {
-    player1.x += player1.speed;
+    player1_pos.x += player1.speed;
     EventKeydown_of_player.player_direction = "right";
   }
 
   ctx.beginPath();
   
   if (EventKeydown_of_player.player_direction === "left") {
-    ctx.drawImage(image_char1_left, player1.x, player1.y);
+    ctx.drawImage(image_char1_left, player1_pos.x, player1_pos.y);
   }
   else if (EventKeydown_of_player.player_direction === "right") {
-    ctx.drawImage(image_char1_right, player1.x, player1.y);
+    ctx.drawImage(image_char1_right, player1_pos.x, player1_pos.y);
   }
   
   ctx.fill();
