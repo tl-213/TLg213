@@ -1,4 +1,4 @@
-let player = {
+let player_pos = {
   x: canvas.width,
   y: canvas.height,
   w: 60,
