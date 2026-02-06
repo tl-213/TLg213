@@ -10,6 +10,7 @@ let player1 = {
   x: canvas.width / 2,
   y: canvas.height / 2,
   speed: 5,
+  attack_range: 45,
 
   hp: {
     hp_now: 100,
@@ -64,6 +65,7 @@ function drawPlayer1() {
     player1.rect_hp.rect_w * (player1.hp.hp_now / player1.hp.hp_max),
     player1.rect_hp.rect_h
   );
+  ctx.beginPath()
 }
 
 window.addEventListener("keydown", (e) => {
