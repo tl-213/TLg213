@@ -31,11 +31,11 @@ function drawPlayer1() {
   } 
   else if (EventKeydown_of_player.move.normal === "a") {
     player1.x -= player1.speed;
-    EventKeyDown_of_player.player_direction = "left";
+    EventKeydown_of_player.player_direction = "left";
   } 
   else if (EventKeydown_of_player.move.normal === "d") {
     player1.x += player1.speed;
-    EventKeyDown_of_player.player_direction = "right";
+    EventKeydown_of_player.player_direction = "right";
   }
 
   ctx.beginPath();
@@ -43,7 +43,7 @@ function drawPlayer1() {
   if (EventKeydown_of_player.player_direction === "left") {
     ctx.drawImage(image_char1_left, player1.x, player1.y);
   }
-  else if (EventKeyDown_of_player.player_direction === "right") {
+  else if (EventKeydown_of_player.player_direction === "right") {
     ctx.drawImage(image_char1_right, player1.x, player1.y);
   }
   
