@@ -42,10 +42,10 @@ function drawPlayer1() {
   ctx.beginPath();
   
   if (EventKeydown_of_player.player_direction === "left") {
-    ctx.drawImage(character1_vietnamball_left, player1.x, player1.y);
+    ctx.drawImage(image_char1_left, player1.x, player1.y);
   }
   else if (EventKeydown_of_player.player_direction === "right") {
-    ctx.drawImage(character1_vietnamball_right, player1.x, player1.y);
+    ctx.drawImage(image_char1_right, player1.x, player1.y);
   }
   
   ctx.fill();
