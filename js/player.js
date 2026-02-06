@@ -3,7 +3,7 @@ let EventKeydown_of_player = {
     normal: "o"
   },
 
-  player_direction: "left"  
+  player_direction: "right"  
 };
 
 let player1 = {
@@ -41,10 +41,10 @@ function drawPlayer1() {
   ctx.beginPath();
   
   if (EventKeydown_of_player.player_direction === "left") {
-    ctx.drawImage(image_player1_left, player1.x, player1.y);
+    ctx.drawImage(image_char1_left, player1.x, player1.y);
   }
   else if (EventKeyDown_of_player.player_direction === "right") {
-    ctx.drawImage(image_player1_right, player1.x, player1.y);
+    ctx.drawImage(image_char1_right, player1.x, player1.y);
   }
   
   ctx.fill();
