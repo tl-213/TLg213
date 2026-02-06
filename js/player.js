@@ -32,7 +32,6 @@ function drawPlayer1() {
   else if (EventKeydown_of_player.move.normal === "a") {
     player1.x -= player1.speed;
     EventKeydown_of_player.player_direction = "left";
-    console.log("left");
   } 
   else if (EventKeydown_of_player.move.normal === "d") {
     player1.x += player1.speed;
