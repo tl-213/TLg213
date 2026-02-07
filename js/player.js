@@ -1,3 +1,4 @@
+
 let EventKeydown_of_player = {
   move: {
     normal: "o"
@@ -82,4 +83,3 @@ window.addEventListener("keyup", (e) => {
     EventKeydown_of_player.move.normal = "o";
   }
 });
-
