@@ -1,5 +1,5 @@
 map_data_center = {
-  map_format_code = 1
+  map_format_code: 1
 };
 
 if (map_format_code === 1) {
