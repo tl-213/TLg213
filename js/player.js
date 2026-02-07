@@ -40,10 +40,10 @@ function drawPlayer1() {
   ctx.beginPath();
   
   if (EventKeydown_of_player.player_direction === "left") {
-    ctx.drawImage(image_char1_left, player1_pos.x, player1_pos.y);
+    ctx.drawImage(image_char1_left, canvas.width / 2, canvas.height / 2);
   }
   else if (EventKeydown_of_player.player_direction === "right") {
-    ctx.drawImage(image_char1_right, player1_pos.x, player1_pos.y);
+    ctx.drawImage(image_char1_right, canvas.width / 2, canvas.height / 2);
   }
   
   ctx.fill();
