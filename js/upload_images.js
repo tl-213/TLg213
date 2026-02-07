@@ -11,3 +11,11 @@ image_normal_zombie_001_right.src = "images/normal_zombie_001_right.png"
 
 let image_normal_zombie_001_left = new Image()
 image_normal_zombie_001_left.src = "images/normal_zombie_001_left.png"
+
+
+
+let image_background = {
+	image_background_map_001: new Image()
+}
+
+image_background.image_background_map_001.src = "images/background/Map 001.png"
