@@ -1,6 +1,6 @@
 let player1_pos = {
-  x: canvas.width / 2,
-  y: canvas.height / 2,
+  x: 0,
+  y: 0,
   w: 60,
   h: 60
 }
