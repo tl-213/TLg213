@@ -1,4 +1,4 @@
-let player1_pos = {
+let player_pos = {
   x: 0,
   y: 0,
   w: 60,
