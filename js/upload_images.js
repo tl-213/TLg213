@@ -16,6 +16,12 @@ zombies.image_normal_zombie_001_left.src = "images/zombies/normal_zombie_001/nor
 
 
 
+let avatar_and_bar = {
+	avatar_frameBar_image: new Image(),
+	
+}
+avatar_and_bar.avatar_frameBar_image.src = "images/avatar_and_bar/avatar_and_frameBar.png"
+
 let image_background = {
 	image_background_map_001: new Image()
 }
