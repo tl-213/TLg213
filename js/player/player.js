@@ -16,6 +16,11 @@ let player = {
     hp_max: 100
   },
 
+  mana: {
+    mana_now: 100,
+    mana_max: 100
+  },
+
   rect_hp: {
     rect_w: 200,
     rect_h: 30
