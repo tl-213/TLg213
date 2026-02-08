@@ -7,7 +7,7 @@ let EventKeydown_of_player = {
   player_direction: "right"  
 };
 
-let player1 = {
+let player = {
   speed: 5,
   attack_range: 45,
 
@@ -22,19 +22,19 @@ let player1 = {
   }
 };
 
-function drawPlayer1() {
+function drawPlayer() {
   if (EventKeydown_of_player.move.normal === "w") {
-    player1_pos.y -= player1.speed;
+    player_pos.y -= player.speed;
   } 
   else if (EventKeydown_of_player.move.normal === "s") {
-    player1_pos.y += player1.speed;
+    player_pos.y += player.speed;
   } 
   else if (EventKeydown_of_player.move.normal === "a") {
-    player1_pos.x -= player1.speed;
+    player_pos.x -= player.speed;
     EventKeydown_of_player.player_direction = "left";
   } 
   else if (EventKeydown_of_player.move.normal === "d") {
-    player1_pos.x += player1.speed;
+    player_pos.x += player.speed;
     EventKeydown_of_player.player_direction = "right";
   }
 
