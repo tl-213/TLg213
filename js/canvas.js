@@ -26,8 +26,6 @@ function resize_canvas() {
   canvas.height = window.innerHeight;
 };
 
-resize_canvas()
-
 let scale_canvas = Math.min(
   canvas.width / original_width,
   canvas.height / original_height
