@@ -29,3 +29,8 @@ let image_background = {
 }
 
 image_background.image_background_map_001.src = "images/background/Map 001.png"
+
+let buttons_for_phone = {
+	image_navigationButton: new Image()
+}
+buttons_for_phone.image_navigationButton.src = "images/button_for_phone/navigation_buttons/navigation_buttons.png"
