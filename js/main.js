@@ -4,9 +4,9 @@ function gameLoop() {
   create_normal_map();
   draw_AvatarHealthbarManabar();
   drawPlayer();
-  create_navigationButton()
+  create_navigationButton();
   requestAnimationFrame(gameLoop);
-}
+};
 
-gameLoop()
+gameLoop();
 
