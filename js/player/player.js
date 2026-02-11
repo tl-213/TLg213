@@ -1,7 +1,8 @@
 
 let EventKeydown_of_player = {
   move: {
-    normal: "o"
+    normal_x: "o",
+    normal_y: "o"
   },
 
   player_direction: "right"  
@@ -28,17 +29,17 @@ let player = {
 };
 
 function drawPlayer() {
-  if (EventKeydown_of_player.move.normal === "w") {
+  if (EventKeydown_of_player.move.normal_y === "w") {
     player_pos.y -= player.speed;
   } 
-  else if (EventKeydown_of_player.move.normal === "s") {
+  else if (EventKeydown_of_player.move.normal_y === "s") {
     player_pos.y += player.speed;
   } 
-  else if (EventKeydown_of_player.move.normal === "a") {
+  else if (EventKeydown_of_player.move.normal_x === "a") {
     player_pos.x -= player.speed;
     EventKeydown_of_player.player_direction = "left";
   } 
-  else if (EventKeydown_of_player.move.normal === "d") {
+  else if (EventKeydown_of_player.move.normal_x === "d") {
     player_pos.x += player.speed;
     EventKeydown_of_player.player_direction = "right";
   }
@@ -56,18 +57,19 @@ function drawPlayer() {
 }
 
 window.addEventListener("keydown", (e) => {
-  if (e.key === "a" || e.key === "d" || e.key === "w" || e.key === "s") {
-    EventKeydown_of_player.move.normal = e.key;
+  if (e.key === "a" || e.key === "d") {
+    EventKeydown_of_player.move.normal_x = e.key;
+  }
+  else if (e.key === "w" || e.key === "s") {
+    EventKeydown_of_player.move.normal_y = e.key;
   }
 });
 
 window.addEventListener("keyup", (e) => {
-  if (
-    e.key.toLowerCase() === "w" ||
-    e.key.toLowerCase() === "s" ||
-    e.key.toLowerCase() === "a" ||
-    e.key.toLowerCase() === "d"
-  ) {
-    EventKeydown_of_player.move.normal = "o";
+  if (e.key.toLowerCase() === "a" || e.key.toLowerCase() === "d") {
+    EventKeydown_of_player.move.normal_x = "o";
+  }
+  else if (e.key.toLowerCase() === "w" || e.key.toLowerCase() === "s") {
+    EventKeydown_of_player.move.normal_y = "o";
   }
 });
