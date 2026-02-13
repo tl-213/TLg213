@@ -37,7 +37,7 @@ function create_navigationButton() {
   
 
   
-  ctx.fillStyle = "rgba(255, 255, 255, 1)";
+  ctx.fillStyle = "rgba(255, 255, 255, 0)";
   
   information_navigationButtons.w_button.x = size_imageNavigationButton / 2 - information_navigationButtons.w_button.w / 2 + 1
   information_navigationButtons.w_button.y = canvas.height - size_imageNavigationButton - 2
@@ -50,7 +50,7 @@ function create_navigationButton() {
 
 
   
-  ctx.fillStyle = "rgba(0, 255, 0, 1)";
+  ctx.fillStyle = "rgba(0, 255, 0, 0)";
   
   information_navigationButtons.a_button.x = 2
   information_navigationButtons.a_button.y = canvas.height - (size_imageNavigationButton / 2) - (information_navigationButtons.d_button.h / 2) - 6
@@ -63,7 +63,7 @@ function create_navigationButton() {
 
 
   
-  ctx.fillStyle = "rgba(255, 0, 0, 1)";
+  ctx.fillStyle = "rgba(255, 0, 0, 0)";
   
   information_navigationButtons.s_button.x = size_imageNavigationButton / 2 - information_navigationButtons.w_button.w / 2
   information_navigationButtons.s_button.y = canvas.height - information_navigationButtons.s_button.h
@@ -76,7 +76,7 @@ function create_navigationButton() {
 
 
   
-  ctx.fillStyle = "rgba(0, 0, 255, 1)";
+  ctx.fillStyle = "rgba(0, 0, 255, 0)";
   
   information_navigationButtons.d_button.x = size_imageNavigationButton - information_navigationButtons.d_button.w
   information_navigationButtons.d_button.y = canvas.height - (size_imageNavigationButton / 2) - (information_navigationButtons.d_button.h / 2) - 6
