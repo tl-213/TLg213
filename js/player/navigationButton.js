@@ -26,6 +26,8 @@ let information_navigationButtons = {
 };
 
 function create_navigationButton() {
+  ctx.beginPath()
+
   let size_imageNavigationButton = 270 * scale_canvas
   
   ctx.drawImage(buttons_for_phone.image_navigationButton, 
